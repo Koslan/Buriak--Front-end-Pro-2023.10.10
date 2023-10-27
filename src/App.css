@@ -1,42 +1,167 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  background-color: #f5f6fa;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navList li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3f3f3f;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navList li a:hover {
+  color: #3498db;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  border: 2px solid #3f3f3f;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.searchBox input[type="text"] {
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  outline: none;
+  flex-grow: 1;
+}
+
+.searchBox button {
+  background-color: #3498db;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.searchBox button:hover {
+  background-color: #2980b9;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-top: 30px;
+  width: 90%;
 }
 
 .card {
-  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  background-color: #fff;
+  position: relative;
 }
 
-.read-the-docs {
-  color: #888;
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.cardFooter h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+.smallBtn {
+  width: 90px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deleteBtn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.editBtn {
+  background-color: #3498db;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #c0392b;
+}
+
+.editBtn:hover {
+  background-color: #2980b9;
+}
+
+
+.contactCard {
+  background-color: #ffffff;
+  border: 2px solid #e6e6e6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contactHeader {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+  margin: -20px -20px 20px -20px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.contactIcon {
+  margin-right: 10px;
+  color: #555555;
+}
+
+.contactText {
+  font-size: 18px;
 }
