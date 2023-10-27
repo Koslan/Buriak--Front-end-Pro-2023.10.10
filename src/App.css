@@ -165,3 +165,34 @@
 .contactText {
   font-size: 18px;
 }
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+button.submit, button.cancel {
+  margin-right: 10px;
+}
+
+.card_cntr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+ul.card {
+  max-width: 400px;
+}
